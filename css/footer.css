@@ -1,0 +1,132 @@
+footer {
+	background: #f2f2f2;
+	padding-top: 20px;
+}
+footer a {
+	text-decoration: none;
+	color:#555;
+}
+.footerTop {
+	/*background: yellow;*/
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width:80%;
+	margin: 0 auto;
+}
+.footerTop ul {
+	list-style: none;
+	font-size: 14px;
+}
+.footerTop ul>li:nth-child(1) {
+	margin-top: 10px;
+}
+.everyone>ul:nth-child(2) {
+	margin-top: 40px;
+}
+.footerTop ul li {
+	line-height: 25px;
+	font-size: 12px;
+	
+	
+}
+.footerTop li a {
+	text-decoration: none;
+	color:#555;
+}
+.footerTop li a:hover {
+	text-decoration: underline;
+}
+
+
+/*小屏尾部导航*/
+.footerTop2 {
+	width:90%;
+	margin: 0 auto;
+	/*display: none;*/
+}
+
+.footerTop2  .box {
+	font-size: 12px;
+	padding:14px 0px;
+	border-bottom: 1px solid #aaa;
+	list-style: none;
+}
+.footerTop2  .box a:hover {
+	text-decoration: none;
+}
+.footerTop2  .box>a:nth-child(2) {
+	float: right;
+	font-size: 16px;
+	margin-right: 5px;
+}
+.footerTop2 .hidden {
+	height: 0px;
+	overflow: hidden;
+	transition: 1s;
+}
+.footerTop2 .hidden li {
+	margin-top: 10px;
+	margin-left: 3px;
+	
+}
+.footerTop2  .box:hover .hidden{
+	/*display: block;*/
+	height: 140px;
+	
+}
+.footerTop2  .box li a:hover {
+	text-decoration: underline;
+}
+/*最后几行*/
+footer .call, footer .time, footer .police {
+	margin:  0 auto;
+}
+footer .call {
+	margin-top: 25px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #aaa;	
+}
+footer .call a {
+	color:#0070c9;	
+}
+footer .time {
+	margin-top: 20px;
+}
+.footer_nav {
+	display: inline-block;
+	margin-left: 30px;
+}
+.footer_nav>a:not(.special):after {
+	content: "|";
+	margin: 10px;
+}
+.police {
+	padding:15px 0px;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer .call, footer .time, footer .police{
+	display: block;
+	font-size: 10px;
+	width:80%;
+	color:#555;	
+}
+
+@media only screen and (max-width:1069px ) {
+	
+	footer .footerTop ul li, footer .footerTop ul {
+	    font-size: 11px;
+	}
+	footer .S {
+		font-size: 11px;
+	}
+}
+@media only screen and (max-width:735px ) {
+	html body footer {
+		font-size: 12px;
+	}
+	
+}

@@ -1,0 +1,392 @@
+* {
+	margin:0px;
+	padding: 0px;
+}
+/*头部*/
+/*第一部分*/
+header {
+	width:100%;
+	position: fixed;
+	z-index: 20;
+	top:0px;
+	left:0px;
+}
+.header-adv {
+	text-align: right;
+	background: #444444;
+}
+.header-adv .adv {
+	margin-right: 140px;
+	padding:13px 0px;
+	color:#a8a8aa;
+	font-size: 12px;
+}
+/*第二部分大屏显示*/
+.bigNav {
+	width:100%;
+	background: rgba(0,0,0,0.8);
+	
+}
+.bigNav ul{
+	display: flex;
+	justify-content:space-around ;	
+	width: 84%;
+	margin-left: 8%;
+	padding:13px 0px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+.bigNav li {
+	list-style: none;
+}
+.bigNav li a {
+	text-decoration: none;
+	color:#fff;
+}
+.bigNav li a:hover {
+	opacity: 0.65;
+	transition: .3s;
+}
+
+/*大屏搜索下拉框*/
+.origin {
+	position: relative;
+	z-index: 40;
+}
+.need {
+	position: absolute;
+	top:-13px;
+	left:-750px;
+	/*box-sizing: border-box;*/
+	width:0px;
+	overflow: hidden;
+	transition: 1s;
+	z-index: 40;
+}
+.vampire {
+	width:900px;
+	height: 248px;
+	
+}
+ .vampireSon>div{
+	background: #fff;
+	width:900px;
+	/*text-align: center;*/
+}
+ .vampireSon {
+ 	width:0px;
+ 	overflow: hidden;
+ 	background: #fff;
+ 	
+ 
+ }
+  .vampireSon>div>div {
+  	height: 40px;
+  	line-height: 40px;
+  	
+  }
+.vampireSon>div>div:hover {
+	background: #aaa;
+}
+.vampireSon>div>div:hover  a{
+	color:#0070C9;
+}
+ .vampireSon>div>div a {
+ 	color:#555;
+ 	padding-left: 50px;
+ }
+.vampire .dog {
+	line-height: 48px;
+	padding-left: 150px;
+	background: #000;
+	width:900px;
+
+}
+.vampire .dog>div input {
+	background: transparent;
+	border:none;
+	padding:10px 30px ;
+	outline: none;
+	color:#fff;
+}
+.origin:hover .need{
+	width: 900px;	
+}
+.origin:hover .dog {
+	transform: translateX(-100px);
+	transition: 1s;
+}
+.origin:hover .vampireSon {
+	width:900px;
+	
+}
+.origin:hover .vampireSon>div>div a{
+	padding-left: 30px;
+	transition: 1.2s;	
+}
+/*购物袋下拉框*/
+.cups {
+	position: relative;
+}
+.shoppingBag {
+	width:250px;
+	position: absolute;
+	top:35px;
+	left:-120px;
+	background: #fff;
+	color:#aaa;
+	border:1px solid #ddd;
+	box-sizing: border-box;
+	display: none;
+}
+.empety {
+	width:80%;
+	margin-left: 10%;
+	padding:30px 3px;
+	text-align: center;
+}
+.shoppingBag div a {
+	width:80%;
+	color:blue;
+	display: inline-block;
+	margin-left: 10%;
+	padding:12px 3px;
+	border-top: 1px solid #ddd;
+}
+.shoppingBag div a:hover {
+	text-decoration: underline;
+	opacity: 1;
+}
+.cups:hover .shoppingBag {
+	display: block;
+}
+
+
+/*图标调整*/
+.apple:after {
+	content: "\f179";
+	font-size: 20px;
+	color:#fff;
+	vertical-align: middle;
+}
+.search:after {
+	content: "\f002";
+	font-size: 15px;
+	color:#fff;
+}
+.shopping-bag:after {
+	content: "\f290";
+	font-size: 15px;
+}
+/*第二部分小屏显示*/
+.smallNav {
+	width:100%;
+	background: #000;
+	background: rgba(0,0,0,0.8);
+	display: none;	
+	position: relative;
+	z-index: 30;
+}
+.smallNav ul {
+	display: flex;
+	justify-content:space-between ;	
+	width: 94%;
+	margin-left: 3%;
+	padding:13px 0px;	
+}
+.smallNav li{
+	list-style: none;	
+}
+.smallNav li a {
+	text-decoration: none;
+	color: #fff;
+}
+.smallNav li a:hover {
+	opacity: 0.65;
+	transition: .3s;
+}
+/*图标调整*/
+.apple:after {
+	content: "\f179";
+	font-size: 22px;
+}
+
+/*下拉框*/
+.smallNav ul>li:nth-child(1){
+	position: relative;
+}
+ .smallNav ul li .drop-down {
+	width:100vw;
+	height:0vh;
+	overflow: hidden;
+	transition: 1s;
+	background: #000;
+	position: absolute;
+	top:36px;
+	left:-30px;
+	z-index: 19;
+	opacity: 1;
+	
+}
+
+.title-part {
+	padding:13px 0px;
+	/*background: green;*/
+}
+.title-part .fa-close {
+	margin-left: 30px;
+	opacity: 0;
+	
+}
+/*.title-part .apple {
+	margin-left: 40%;	
+}*/
+.input-part {
+	/*background: mistyrose;*/
+	padding:0px 0px 13px 0px;
+	border-bottom: 1px solid #282828;
+
+}
+
+
+
+/*新增小屏拉框的下拉框*/
+.darkMonster {
+	width:150%;
+	height: 0px;
+	transition: 2s;
+	overflow: hidden;
+	
+}
+.input-part .darkMonster>div {
+	background: none;
+	width:80vw;
+	margin:0 auto;
+	padding: 15px 0px;
+	border-radius:0px;
+}
+.input-part .darkMonster>div:nth-child(1) {
+	border-top: 1px solid #fff;
+	margin-top: 20px;
+}
+.input-part:hover .darkMonster {
+	height: 400px;
+}
+.drop-down .cut {
+	height: 65vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.input-part>div {
+	width:75%;
+	margin: 0 auto;	
+}
+.input-part>div>div {
+	width:90%;
+	
+	border-radius: 7px;
+	overflow: hidden;
+	/*background: orange;*/
+	background: #282828;
+	vertical-align: middle;
+	display: inline-block;
+}
+.input-part .search {
+	line-height: 35px;
+	margin-left: 10px;
+	
+}
+.input-part input {
+	background: none;
+	border:none;
+	margin-left: 10px;
+	outline: none;
+	background: transparent;
+	color:#fff;
+}
+.input-part button {
+	vertical-align: middle;
+	background: none;
+	color:#66bbff;
+	border:none;
+}
+.choose {
+	width:75%;
+	margin:0 auto;
+	padding: 15px 0px;
+	border-bottom: 1px solid #282828;
+}
+/*hover效果*/
+
+.smallNav ul>li:nth-child(1):hover .drop-down {
+	height: 100vh;
+} 
+.smallNav ul>li:nth-child(1):hover .fa-navicon {
+	opacity: 0;
+}
+.smallNav ul>li:nth-child(1):hover .title-part .fa-close {
+	opacity: 1;
+}
+
+
+
+
+
+
+/*中屏变化*/
+@media only screen and (max-width: 1069px) {
+	.header-adv .adv {
+		margin-right: 2%;
+	}
+	.bigNav ul {
+		justify-content: space-between;
+		width: 95%;
+		margin-left: 2.5%;
+	}
+	.need {
+		left:-700px;
+		/*box-sizing: border-box;*/
+	}
+	.origin:hover .need{
+		width: 720px;	
+	}
+	.shoppingBag {
+		left:-220px;
+	}
+	
+}
+@media only screen and (max-width: 735px ) {
+	.bigNav {
+		display: none;
+	}
+	.smallNav {
+		display: block;
+	}
+	.shoppingBag {
+		left:-220px;
+	}
+	.shoppingBag  div {
+		font-size: 16px;
+	}
+	.shoppingBag  div a  {
+		color:blue;
+		font-size: 15px;
+		opacity: 1;
+	}
+}
+  
+
+
+

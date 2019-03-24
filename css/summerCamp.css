@@ -1,0 +1,313 @@
+html {
+	font-size: 20px;
+}
+body header {
+	position: static;
+}
+.besides {
+	background: #404040;
+	display: flex;
+	justify-content: space-between;
+	padding:12px 10%; 
+}
+.besides span {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color:#fff;
+	
+}
+.besides div a{
+	color:#fff;
+	text-decoration: none;
+	font-size:  .6rem;
+	margin:0px 10px;	
+}
+.besides div a:hover {
+	color: rgb(0, 112, 201);
+}
+/*小屏时的beside*/
+.beside {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	padding:12px 3%;
+	background: #404040; 
+	display: none;
+}
+.beside span {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color:#fff;
+}
+.beside>.arrow {
+	color:#fff;
+	position: relative;
+	/*width:30px;*/
+}
+.beside>.arrow>div {
+	background: #404040; 
+	position: absolute;
+	top:43px;
+	width:98.3vw;
+	left:-93vw;
+	padding:0px 0px;
+	height:0px;
+	overflow: hidden;
+	transition: 1s;
+}
+.beside>.arrow>div a {
+	text-decoration: none;
+	color:#fff;
+	line-height: 2.5rem;
+	font-size:  .8rem;
+	margin-left: 60px;	
+}
+.beside>.arrow:hover div {
+	height: 110px;
+}
+.beside>.arrow>div a:hover {
+	color:blue;
+}
+
+
+
+
+
+
+
+
+
+/*大图片*/
+.childrenPicture img{
+	width:100%;
+}
+
+
+
+/*内容部分*/
+.introduce {
+	width:50%;
+	margin:0 auto;
+	padding:4rem 10%;
+	text-align: center;
+	border-bottom: 1px solid #aaa;
+	/*background: red;*/
+}
+.introduce h1 {
+	margin-bottom: 1rem;
+}
+.introduce p {
+	line-height: 2rem;
+	font-weight: lighter;
+	font-size: 1.1rem;
+}
+.mainContent {
+	width: 70%;
+	/*background: green;*/
+	margin:4rem auto;
+	display: flex;
+	justify-content: space-between;
+	font-size: .9rem;
+	font-weight: lighter;
+}
+.mainContent .left {
+	width:40%;
+	/*background: yellow;*/
+}
+.mainContent .right {
+	width:50%;
+}
+.mainContent  h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+.mainContent  p {
+	margin-bottom: 1rem;
+}
+.mainContent mark {
+	background: none;
+	font-weight: normal;
+	display: inline-block;
+	margin: .2rem 0px;	
+}
+.mainContent .right>div {
+	font-size: .7rem;
+	font-weight: normal;
+	color:red;
+}
+.mainContent .blankSpace {
+	margin: 1.2rem 0px;
+	height: 1.5rem;
+	width: 10rem;
+	border-radius: .3rem;
+	border:1px solid #aaa;
+	outline: none;
+	padding-left: 1rem;
+}
+.mainContent .right span{
+	font-size: .6rem;
+	display: inline-block;
+	width:70%;
+	vertical-align: top;
+}
+.mainContent a {
+	text-decoration: none;
+	color: #0070C9;
+	font-weight: normal;
+}
+.content .inform {
+	display: block;
+	border:2px solid #aaa;
+	width:4rem;
+	height:2rem;
+	border-radius: .7rem;
+	text-align: center;
+	background: none;
+	color:#aaa;
+	font-weight: lighter;
+	line-height: 2rem;
+	margin-top:2rem;
+	margin-bottom: 10rem;
+	outline: none;
+	position: relative;
+}
+.inform .tip {
+	border:1px solid #aaa;
+	width:2rem;
+	height: 1rem;
+	position: absolute;
+	transition: 1s;
+	line-height: 1rem;
+	top:2rem;
+	left:2rem;
+	opacity: 0;	
+}
+.content .inform:hover {
+	cursor: pointer;	
+}
+.content .inform:hover .tip{
+	opacity: 1;
+}
+
+
+
+
+
+/*footer部分*/
+.S {
+	width:80%;
+	font-size: 12px;
+	margin:20px auto ;
+	padding-bottom: 20px;
+	color:#666;
+}
+footer div:nth-child(1) {
+	border-bottom: 1px solid #aaa;	
+}
+.behide>span:nth-child(1):after, .behide>span:nth-child(2):after  {
+	content: ">";
+	margin:0px 20px;
+	text-decoration: none;
+}
+.behide .fa-apple {
+	font-size: 1rem;
+}
+.behide .fa-apple:hover {
+	color:#000;
+}
+
+footer .footerTop2 {
+	display: none;
+}
+
+@media only screen and (max-width:1069px ) {
+	.besides {
+		justify-content: space-between;
+		padding:12px 2%;	 
+	}
+	.S {
+		width:90%;
+	}	
+	footer .footerTop {
+		width: 90%;
+	}
+	body footer .call, body footer .time,body footer .police {
+		width:90%;
+	}
+	
+}
+@media only screen and (max-width:735px ) {
+	.besides {
+		display: none;
+	} 
+	.beside {
+		display: flex;
+	}
+	.introduce {
+		width:90%;
+		text-align: left;
+		padding:3rem 0px;
+	}
+	.introduce h1 {
+		font-size: 1.5rem;
+		
+	}
+	.introduce p {
+		font-size: .9rem;
+	}
+	.S {
+		width:90%;
+		font-size: 12px;
+		margin:20px auto ;
+		padding-bottom: 20px;
+		color:#666;
+	}
+	.mainContent {
+		width: 90%;
+		flex-wrap: wrap;
+	}
+	.mainContent .left {
+		width:80%;
+		/*background: yellow;*/
+	}
+	.mainContent .right {
+		width:80%;
+	}
+	.mainContent {
+		font-size:  .8rem;
+	}
+	.mainContent  h3 {
+		font-size: 1.1rem;
+		font-weight: 600;
+		margin:1rem 0px;
+	}
+	.mainContent mark {
+		background: none;
+		font-weight: normal;
+		display: inline-block;
+		margin: .2rem 0px;	
+	}
+	.mainContent .right>span {
+		font-size: .7rem;	
+	}
+	footer .footerTop {
+		display: none;
+	}
+	footer .footerTop2 {
+		display: block;
+	}
+	body footer .call, body footer .time,body footer .police {
+		width:90%;
+	}
+	footer .footer_nav {
+		width:100%;
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	
+	
+	
+}
+
+
